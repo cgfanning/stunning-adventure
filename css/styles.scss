@@ -6,15 +6,20 @@ $color-dark: #d15706;
 $color-transparent-black: rgba(0, 0, 0, 0.5);
 
 $body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
+$header-font: "Luckiest Guy";
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: lightgray;
+//    background-color: lightgray;
+    background-image: url("https://images.pexels.com/photos/985287/pexels-photo-985287.jpeg?cs=srgb&dl=assorted-colored-wooden-planks-985287.jpg&fm=jpg");
+//    height: 2000px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 h1, h2, h3 {
-    font-family: "Lobster", cursive;
+    font-family: "Luckiest Guy";
 }
 
 h2 {
@@ -38,8 +43,9 @@ footer {
 
 .jumbotron {
     padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
+    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark); 
     color: white;
+    margin: 0;
 }
 
 .row-content {
@@ -52,18 +58,12 @@ footer {
     background-color: $color-mid;
 }
 
-.jumbotron {
-    margin: 0;
-}
-
 .carousel-caption {
     background-color: $color-transparent-black;
 }
 
 .carousel {
     border: solid $color-secondary;
-//    height: 360px;
-//    object-fit: contain;
 }
 
 #carouselButton {

@@ -1,9 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: lightgray; }
+  background-image: url("https://images.pexels.com/photos/985287/pexels-photo-985287.jpeg?cs=srgb&dl=assorted-colored-wooden-planks-985287.jpg&fm=jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */ }
 
 h1, h2, h3 {
-  font-family: "Lobster", cursive; }
+  font-family: "Luckiest Guy"; }
 
 h2 {
   color: #3046C5; }
@@ -21,7 +27,8 @@ footer {
 .jumbotron {
   padding: 30px;
   background-image: linear-gradient(to right, #3785dd, #3046C5, #d15706);
-  color: white; }
+  color: white;
+  margin: 0; }
 
 .row-content {
   padding: 50px 0;
@@ -30,9 +37,6 @@ footer {
 
 .navbar {
   background-color: #f08a17; }
-
-.jumbotron {
-  margin: 0; }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
