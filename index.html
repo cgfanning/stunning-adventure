@@ -53,15 +53,13 @@
    
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class = "text-sm-right">Classmate Directory</h2>
-            </div>
             <div class = "col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="Images/1970-seniors.jpg" height = "350" width = "200" alt="Seniors of 1970" />
-                    <div class="media-body align-self-center">
-                        <h3>Subheader</h3>
-                        <p>More Info Here</p>
+                <div class = "media">
+                    <img class = "d-flex mr-3 img-thumbnail" src = "Images/1970-seniors.jpg" height = "350" width = "200" alt="Seniors of 1970" />
+                    <div class = "media-body align-self-center">
+                        <h2>Save the Date<br>for our 50th Reunion!</h2>
+                        <h3>September 11-12, 2020</h3>
+                        <p><br/>Kankakee Valley Boat Club<br>1600 Cobb Blvd<br>Kankakee, IL
                     </div>
                 </div>
             </div>
@@ -69,7 +67,10 @@
 
        <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
-                <h2>Reunion FAQ</h2>
+                <div class = "media">
+                    <img class = "d-flex mr-3 img-thumbnail" src = "questionsticker.png" height = "350" width = "200" alt="Questions" />
+                    <h2>Reunion FAQ</h2>
+                </div>
             </div>
             <div class = "col">
                 <h3>Subheader</h3>
@@ -120,26 +121,12 @@
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function() {
-            $(".carousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause"); 
-                }
-            });
-        });
-    </script>
+    <!-- build:css css/main.css -->
+    <script src = "node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src = "js/scripts.js"></script>
+    <!-- endbuild -->
 
 </body>
 
